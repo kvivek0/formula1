@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.886);
+      display: flex;
+      height: 95px;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      height: 50px;
+      margin-left: 20px;
+    }
+
+    header h1 {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #f70909ee;
+      text-shadow: black 2px 2px 0.2rem;
+      font-size: 35px;
+    }
+
+    /* center form without affecting header */
+    form {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      padding: 25px;
+      width: 600px;
+      margin: 40px auto; /* THIS centers it */
+      border-radius: 6px;
+    }
+
+    /* form heading */
+    form h2 {
+      color: #ffffff;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    /* labels */
+    form label {
+      display: block;
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+
+    /* inputs */
+    form input,
+    form select,
+    form textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #555;
+      background-color: #2a2a2a;
+      color: #fff;
+      border-radius: 4px;
+    }
+
+    /* textarea */
+    form textarea {
+      resize: none;
+    }
+
+    /* focus */
+    form input:focus,
+    form select:focus,
+    form textarea:focus {
+      outline: none;
+      border-color: #e10600;
+    }
+
+    /* submit button */
+    form button {
+      margin-top: 18px;
+      width: 100%;
+      padding: 10px;
+      background-color: #e10600;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #b00500;
+    }
+    /* car css */
+    .car-image {
+      display: block;
+      margin-top: -120px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+    }
+
+    .car-section {
+      position: relative;
+      text-align: center;
+    }
+
+    .car-image {
+      width: 100%;
+      display: block;
+      margin: auto;
+    }
+
+    .car-text {
+      position: absolute;
+      top: 80%;
+      right: 10%;
+      color: #000;
+      font-size: 32px;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .car-text span {
+      display: block;
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: normal;
+    }
+
+    .footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+      margin-top: 60px;
+    }
+
+    .footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+    input#save_button {
+      margin: 18px;
+    }
+  </style>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Formula 1</h1>
+      <img src="logof1.png" alt="f1 logo" class="logo" ; />
+    </header>
+    <!-- carimage -->
+    <div class="car-section">
+      <img src="fig.png" class="car-image" />
+
+      <div class="car-text">
+        “Why don’t you race like me ?”<br />
+        <span>— Max verstappen</span>
+      </div>
+    </div>
+    <h3>About F1</h3>
+    <p>
+      <b
+        >"Formula 1 is the highest class of international, open-wheel
+        single-seater racing, widely considered the pinnacle of motorsport and a
+        premier global sporting event. "</b
+      >
+    </p>
+    <!-- form -->
+    <form action="save.php" method="post">
+      <h2>Apply for racing</h2>
+      <label for="username">Name: </label>
+      <input type="text" id="username" name="username" />
+      <label for="email">E-mail: </label>
+      <input type="email" id="email" name="email" />
+      <label for="contact">Contact No:</label>
+      <input type="text" id="phone" name="phone" />
+      <!--  <label for="gender">Gender: </label>
+      <select id="gender">
+        <option id="gender">Male</option>
+        <option id="gender">Female</option>
+        <option id="gender">Others</option> 
+      </select>
+      <label for="dob"> Date Of Birth: </label>
+      <input type="date" id="dob"> 
+      <label for="message">Enter Your Message: </label>
+      <textarea
+       id="message"
+       rows="8" 
+       cols="50"
+       maxlength="250"
+       placeholder="tell us about yourself">
+      </textarea> -->
+      <input type="submit" name="save_button" id="save_button" value="Submit" />
+      <!-- <button>sUBMI</button> -->
+    </form>
+
+    <footer class="footer">
+      <p>2026 Formula 1 Fan Page. All rights reserved. by ?viv071</p>
+    </footer>
+  </body>
+</html>
